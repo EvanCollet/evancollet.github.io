@@ -1,0 +1,165 @@
+/* Reset des marges et des paddings par défaut */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Définition des couleurs */
+body {
+    background: linear-gradient(90deg, #ff0000, #3498db, #27ae60); /* Fond multicolore avec un dégradé horizontal */
+    font-family: Arial, sans-serif;
+    color: #333; /* Couleur de texte grise foncée */
+}
+
+header {
+    background-color: transparent; /* Fond transparent pour l'en-tête */
+    color: #fff; /* Texte en blanc */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Texte en blanc */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent pour les sections */
+    color: #333; /* Texte en gris foncé */
+}
+
+footer {
+    background: transparent; /* Fond transparent pour le pied de page */
+    color: #fff; /* Texte en blanc */
+    padding: 10px;
+    text-align: center;
+}
+
+#moveButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #3498db; /* Couleur bleue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Ajout de la transition pour la propriété transform */
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; } /* Rouge */
+    25% { color: #ff9900; } /* Orange */
+    50% { color: #33cc33; } /* Vert */
+    75% { color: #3399ff; } /* Bleu */
+    100% { color: #ff0099; } /* Rose */
+}
+
+#moveButton {
+    /* ... autres styles ... */
+    animation: colorChange 5s infinite linear; /* Animation de couleur pendant 5 secondes */
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; } /* Rouge */
+    25% { color: #ff9900; } /* Orange */
+    50% { color: #33cc33; } /* Vert */
+    75% { color: #3399ff; } /* Bleu */
+    100% { color: #ff0099; } /* Rose */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    animation: colorChange 5s infinite linear; /* Animation de couleur du texte pendant 5 secondes */
+}
+
+#number-container {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.border-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: borderGradient 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes borderGradient {
+    0% {
+        background: linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ff0000);
+        background-size: 400% 100%;
+        background-position: 100% 0;
+    }
+    100% {
+        background: linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ff0000);
+        background-size: 400% 100%;
+        background-position: -100% 0;
+    }
+}
